@@ -1,4 +1,4 @@
-package handlersLib
+package main
 
 import (
 	"log"

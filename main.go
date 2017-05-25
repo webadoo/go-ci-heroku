@@ -1,7 +1,6 @@
 package main
 
 import (
-	"go-ci-heroku/handlersLib"
 	"log"
 	"net/http"
 	"os"
@@ -16,7 +15,7 @@ func main() {
 		port = "1337"
 	}
 
-	http.HandleFunc("/hello", handlersLib.AppHandle.HelloHandler)
+	http.HandleFunc("/hello", AppHandle.HelloHandler)
 
 	log.Fatal(http.ListenAndServe(":"+port, nil))
 }
